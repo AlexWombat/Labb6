@@ -1,0 +1,49 @@
+## Linjärsökning
+|     N     |    tid    |
+| --------- | --------- |
+| 1000 | 0.0605508 |		
+| 10000 | 0.6519186 |
+| 50000 | 3.5353714 |
+| 200000 | 14.5430641 |
+| 500000 | 38.3636555 |
+| 1000000 | 80.1339382 |       
+
+O(n) vilket stämmer överens med teorin. 
+
+## Quicksortering
+|     N     |    tid    |  kvot värden /  kvot teori
+| --------- | --------- |
+| 1000 | 0.0056063 |        		
+| 10000 | 0.0812441 |       14.4916        13.3336
+| 50000 | 0.5209159 |       6.4117         5.8736
+| 200000 | 2.4881852 |      4.7766         4.5125
+| 500000 | 6.8304844 |      2.7452         2.6877
+| 1000000 | 14.9848611 |    2.1938         2.1057
+
+~~ O(nlog(n)) vilket stämmer överens med teorin.
+
+## Binärsökning
+|     N     |    tid    |    kvot värden / kvot teori
+| --------- | --------- |
+| 1000 | 0.003443 |		
+| 10000 | 0.0045364 |	       1.3176       1.3333
+| 50000 | 0.0067251 |          1.4825       1.1747
+| 200000 | 0.0073962 |         1.0998       1.1281
+| 500000 | 0.0076455 |         1.0337       1.0751
+| 1000000 | 0.008034 |         1.0508       1.0528
+
+~~ O(log(n)) vilket stämmer överens med teorin. 
+Man kan konstatera 1 sortering + flera binärsökningar är betydligt mer tidseffektivt än flera linjärsökningar. 
+
+## Dictionary-uppslagning
+|     N     |    tid    |
+| --------- | --------- |
+| 1000 | 0.0001915 |
+| 10000 | 0.0001918 |
+| 50000 | 0.0001985 |
+| 200000 | 0.0001968 |
+| 500000 | 0.0001961 |
+| 1000000 | 0.0002271 |
+
+Oavsett antal låtar kretsar "sökningen" kring samma tid. Logiskt då den söker efter ett värde som är kopplat till en nyckel. Snabbaste söktiden.
+
